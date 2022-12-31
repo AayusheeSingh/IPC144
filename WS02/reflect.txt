@@ -1,0 +1,107 @@
+****************************************************************************
+                              Reflection
+                             Workshop - #2
+Full Name  :Aayushee Singh
+StudentI D#:173927211 
+Email      :asingh1221@myseneca.ca 
+Section    :NHH 
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+****************************************************************************
+1. Given the following C statements:
+double price1 = 10.10, price2 = 10.12, price3 = 10.15;
+int cents1 = (int)(price1 * 100);
+int cents2 = (int)(price2 * 100);
+int cents3 = (int)(price3 * 100);
+printf("%d 10.10 = %.15lf\n", cents1, price1);
+printf("%d 10.12 = %.15lf\n", cents2, price2);
+printf("%d 10.15 = %.15lf\n", cents3, price3);
+Briefly explain why the cents2 variable doesn't properly represent the total cents of price2.
+
+Answer:Fractions which are repeated in binary form are not presented as decimal point numbers.Here the integer has the memory of 32 bits.Therefore,during the calculation the value according to the calculation which is 1012 , exceeds the limit of 32 bits and so printed the last value it showed at 32 bit i.e 1011. Hence this is the reason of the wrong answer of cents2.
+
+2. You had to use integer division (/) to get the number of coins and the modulus (%) operator to easily obtain the 
+remainder amount after each coin denomination calculation. Let's assume this program needed to be modified 
+to only determine the breakdown of paper bills ($50, $20, $10, $5). Provide the few lines of code that would be 
+required to demonstrate how the $20 denomination would be calculated (use your solution variables in your 
+example).
+Answer:In my solution I converted the sub total which was stored in variable st_total which was excluding the tax was 323.5100.Then i further get the quantites by using coin denominations and stored in the variables qt1,qt2,qt3,qt4,qt5,qt6 respectively and calculated balances and stored in bal1,bal2,bal3,bal4,bal5,bal6.
+
+Here,according to the question given in the reflection:
+float st_total=323.5100
+Now here the denominations given to us are $50,$20,$10,$5
+So to calculate qt1 we need to use / operator:
+qt1=st_total/50;
+qt1=(int)qt1;
+now we need to use % modulous operator for bal1, but in my actual code i did not use modulous operator directly because it is only applicable for integers,but we need to find the remainder of float values,so i used the logic as:
+bal1=(((st_total/50)-qt1)*50);// This is a mathematical formula to find the remainder of any value(int,double,float)
+Similarly proceeded the further steps:
+qt2=bal1/20;
+qt2=(int)qt2;
+bal2=(((bal1/20)-qt2)*20);
+qt3=bal2/10;
+qt3=(int)qt3;
+bal3=(((bal2/10)-qt3)*10);
+qt4=bal3/5;
+qt4=(int)qt4;
+bal4=(((bal3/5)-qt2)*5);
+Then at last printed the desired result using printf statement as shown below:
+	printf("$50 denomination  %3d %9.4lf\n",(int)qt1,bal1 );
+	printf("$20 denomination  %3d %9.4lf\n",(int)qt2,bal2 );
+	printf("$10 denomination  %3d %9.4lf\n",(int)qt3,bal3 );
+	printf("$5 denomination   %3d %9.4lf\n",(int)qt4,bal4 );
+
+
+
+
+3. Displaying total cents in the format of dollars and cents (ex: 7245 to $72.45) required converting (casting) an 
+integer to a floating-point type (along with a simple calculation). Without changing any variable data types, 
+show three (3) different ways to accomplish the same outcome (use your solution variables in your example). 
+If you are having problems thinking of how to approach this, think about how an expression can be promoted or 
+narrowed in several ways based on explicit casting, coercion, and how each operand plays a role in this 
+determination.
+
+Answer:Below  are the three different ways to proceed:
+ Method1:
+       In my solution I have used  many different variables to do so:
+       Suppose I take a variable amount to store 7245.
+       #include<stdio.h>
+       int main()
+       {
+		int amount=7245;
+		printf("The converted value is $%.2lf\n",(float)amount/float(100));
+		return 0;
+	}
+	Here i took the amount in integer data type and directly converted the value into decimal without  actually changing the amount variable into decimal data type.
+
+Method2:
+       #include<stdio.h>
+       int main()
+       {
+		int amount=7245;
+		float res;
+		res=amount;
+		res=amount/100.0;
+		printf("The converted value is $%.2lf\n",res);
+		return 0;
+	Here i took the amount in integer data type and took another float variable and stored integer variable amount into it.Now everything got converting into float without actually 	changing the data type of the main variable and performed the further calculations.
+	  }
+
+Method3:
+ #include<stdio.h>
+       int main()
+       {
+		int amount=7245;
+		float res;		
+		res=(float)amount/100.0;
+		printf("The converted value is $%.2lf\n",res);
+		return 0;
+	}
+
+
+
+
+

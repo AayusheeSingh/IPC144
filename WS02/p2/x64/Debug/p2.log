@@ -1,0 +1,24 @@
+﻿  w2p2.c
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(58,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(59,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(60,15): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(65,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(66,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(67,15): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(72,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(73,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(74,15): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(93,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(96,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(99,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(102,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(105,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(108,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(127,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(130,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(133,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(136,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(139,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(142,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\w2p2.c(19,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+  p2.vcxproj -> D:\Seneca College Study\SEMESTER 1\IPC101\WS02\p2\x64\Debug\p2.exe

@@ -1,0 +1,4 @@
+﻿  r.c
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\ref\r.c(14,9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Seneca College Study\SEMESTER 1\IPC101\WS02\ref\r.c(15,15): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  ref.vcxproj -> D:\Seneca College Study\SEMESTER 1\IPC101\WS02\ref\x64\Debug\ref.exe
