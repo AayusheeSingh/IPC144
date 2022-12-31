@@ -1,0 +1,24 @@
+****************************************************************************
+                              Reflection
+                             Workshop - #1
+Full Name  :Aayushee Singh
+Student ID#:173927211 
+Email      :asingh1221@myseneca.ca 
+Section    :NHH 
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+****************************************************************************
+1. What you have learned in completing this workshop? (do not leave anything out!)
+Answer:Through workshop-1 I learned many basic C language commands. First of all i came to know about the importance of #include statement which is used in running the C code as it adds the content of some other file into the source code of the running program. Morover the C language provides us with some in-built library functions, for instance <stdio.h> which is a header file. After starting the program in part-1 I learnt how to print anything,its syntax is using printf("Print anything");.Here printf is the main output function of C language to print the data. So using this I completed the part-1 of the workshop according to the instructions given in the question.Another important thing in part 1 was the use of \n which is used to add space to the existing content and move the cursor to the next line.
+In part-2 I came to know about \t which gives Tab space.Further learnt how to print (\,",%) signs in printf command.
+
+2. Briefly describe what SSH is and how you used it in this workshop?
+Answer: SSH-Putty (through which we interact the Linux Server) is used to submit the assignment to the professor.We followed the guidlines provided to us in order to submit the work.First we connected with matrix server through VPN(Global Protect).Then made the directories(ipc144 and w01) to store the file and followed further steps to complete the process.
+
+3. Briefly describe what SFTP is and how you used it in this workshop?
+Answer:The SFTP I m using is (WINSCP) which is used to transfer the created files into the assigned directories.First we linked wincp through matrix account by connecting with host:matrix.senecacollege.ca and after that adding my username and password.Then transfered the files my copying it into the created directories.
+
+
