@@ -1,0 +1,40 @@
+****************************************************************************
+                              Reflection
+                             Workshop - #6
+Full Name  :Aayushee Singh
+StudentI D#:173927211 
+Email      :asingh1221@myseneca.ca 
+Section    :NHH 
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+****************************************************************************
+1. Parallel arrays provide us the ability to group related data. Using what you coded in this workshop, briefly explain how you linked related data for any given item in the dataset? What was the ‘key’ used to accomplish this?
+
+Answer: Parallel arrays are used to express the arrays in tabular form in a more convenient way. I used the concept of parallel array to represent data as follws:
+
+printf("%3d  %5d    %5c    %11.2lf\n", i + 1, priority[i], finance_option[i], cost[i]);
+
+I used this code line to represent data using parallel arrays in which priority[i], finance_option[i], cost[i] these three represent the data of the same item. Hence, these three are interconnected.
+Basically the key over here represents the index  of the given arrays. I inter-related these arrays by keeping the same key for each array to represent the data for same index at the same time.
+
+2. Why do you think it is common practice to iterate arrays initializing the iterator variable to zero and not to a 
+value of one? Justify your answer using an example from this workshop.
+
+Answer: We generally iterate the loop for arrays from 0 , this is generally beacuse of standard convention to iterate the loops of array from 0 which increases the readability of program. This is so beacuse the array index begins from 0 and hence we also iterate the loops from 0 only to make it simple.
+In order to support my answer, we take a general example of array num={10,20,30} Here, position of 10 is at 0 , position of 20 is 1 and position of 30 is 2
+We can iterate it in two ways : 1. for (i=0i<3;i++)    2.for(i=1;i<=3;i++)
+Method one is more readable because it matches with the actual index of array.
+
+I also used this concept in my workshop as :
+for (i = 0; i < items; i++)
+    {
+        printf("%3d  %5d    %5c    %11.2lf\n", i + 1, priority[i], finance_option[i], cost[i]);        
+    }
+Here, the iteration variable i will is represting the same position of the index of each array priority[],finance_option and cost[] which is readable and easy to understand without any confusion.
+
+3.How would you describe conceptually what an array is to a child (5-8-year-old)? How would you describe accessing an element in the array? Warning: keep your explanation simple or the child will not understand.
+Answer: I will describe the concept of arrays as a bookshelf of any particular one type of subject, which contain different raks(say 6 shelf) and we want to acess any one rak of any  particular section of that same subject.
+Therefore as compared to arrays, this bookshelf act as arrays and the these shelfs are the index of arrays and the book at that particular shelf are the values of the array at that index. 
