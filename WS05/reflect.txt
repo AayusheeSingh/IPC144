@@ -1,0 +1,98 @@
+****************************************************************************
+                              Reflection
+                             Workshop - #5
+Full Name  :Aayushee Singh
+StudentI D#:173927211 
+Email      :asingh1221@myseneca.ca 
+Section    :NHH 
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+****************************************************************************
+
+1. Mapping the month integer value to the first three characters of the month name could have been accomplished using one of two possible selection constructs. What are they, and provide a short example of how each would be written in C to display the last two months?
+Answer:This is possible by using one of two possible selection constructs which are if else statement or by using switch case statement.
+
+
+Example 1:Using if else if statement:
+int main(void)
+{
+      int year, month;
+	printf("Set the year and month for the well-being log (YYYY MM): ");
+	scanf("%d %d", &year, &month);
+	if(month==11)
+	{
+ 		printf("%d-NOV-0%d\n", year, i);
+	}
+	else if(month==12)
+	{
+ 	printf("%d-DEC-0%d\n", year, i);
+	}
+return 0;
+}
+
+
+
+Example 2:
+Using switch case:
+
+int main(void)
+{
+      int year, month;
+	printf("Set the year and month for the well-being log (YYYY MM): ");
+	scanf("%d %d", &year, &month);
+	switch(month)
+	{
+		case 11:
+      	printf("%d-NOV-0%d\n", year, i);
+      	break;
+
+      	case 12:
+      	printf("%d-DEC-0%d\n", year, i);
+      	break;
+
+      	default:
+      	printf("invalid");
+	}
+return 0;
+}
+
+2. The logic applied to validate the values entered by the user required iteration. What are the 3 types of iteration constructs? What one did you use for the validation routines, and briefly explain why?
+
+Answer: The three types of iteration constructs are :
+a) For loop
+b) While loop
+c) Do-while loop
+The loop i used for the validation routine is the do while loop beacuse for once it was compulsory for me to enter a value which became easy for me by using this loop.It is shown as follows:
+do
+            {
+                printf("   Morning rating (0.0-5.0): ");
+                scanf("%lf", &morning_rating);
+
+                if ((morning_rating < 0.0) || (morning_rating > 5.0))
+                {
+                    printf("      ERROR: Rating must be between 0.0 and 5.0 inclusive!\n");
+                }
+               
+            } while ((morning_rating < 0) || (morning_rating > 5.0));
+            morning_total += morning_rating;
+
+            do
+             {
+                 printf("   Evening rating (0.0-5.0): ");
+                 scanf("%lf", &evening_rating);
+
+                 if ((evening_rating < 0.0) || (evening_rating > 5.0))
+                 {
+                     printf("      ERROR: Rating must be between 0.0 and 5.0 inclusive!\n");
+                 }
+                 
+             } while ((evening_rating<0.0)||(evening_rating > 5.0));
+            
+3. Describe what you did to test and debug your program. How did you go about finding where the problems were located (explain how you did this for both syntactic and semantic problems)?
+Answer: While writing any code it is common to find bugs or errors, but the important thing is how to overcome from it.Before solving that we need to know the exact scenerio that it is related to which kind of error whether the logical ones or syntax error.
+Syntactic error: For such kind of errors, if ocuur i always start reviewing my code from top to bottom in order to find if any syntax mistake i have made or not.
+Semnatic error: Such kind of errors are very hard to find as grammatically they seem perfectly alright, but in this particular case i use the printf statements to confirm my answer and execute it multiple times again and again after each error and the part for which i m not sure, i turn it into comments to know in which particular block the error is coming. Somwtimes there is a mistake in building the logic of a particular code, therefore i try to recall it again and again if i have implemented it correctly or not.
+
