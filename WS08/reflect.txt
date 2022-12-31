@@ -1,0 +1,95 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #8
+Full Name  : Aayushee Singh
+Student ID#: 173927211
+Email      :asingh1221@myseneca.ca
+Section    :NHH
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+Question 1:Structure data types can demand a lot of memory (for example the "ReportData" structure). Without digging into advanced memory management (for example padding), how many bytes of memory would the "ReportData" structure minimally require? How could we improve the passing of this information to functions? Use the function "displayReportData" from this workshop in your explanation.
+
+Answer 1: Structure data types takes a lot of memory beacuse it depends on the data types defined by the user according to the requirement of the code. As done in this code, the struct ReportData contains lot of memory as it contains 9 variables of different data types in which there are 3 integer type of data type and each integer data type requires 4 bytes of memory and 6 double type of data type and each double data type requires 8 bytes of total memory.
+The user defined structure used in the code is shown below:
+struct ReportData
+{
+    int skuNum;
+    double productPrice;
+    int calories;
+    double weightLBS;
+    double weightKG;
+    int weightG;
+    double totalServings;
+    double costPerServing;
+    double costCalories;
+};
+Therefore, the total memory used by this struct ReportData is calculated by first taking the memory of 3 int type data type by : 3*4= 12 bytes (int will take in total of 12 bytes)
+Now, the 6 of variables double data type will require: 6*8= 48 bytes(double will take total of 48 bytes)
+Allover, the total memory including int and double type are: 12 bytes + 48 bytes = 60 bytes of memory in total.
+
+The function displayReportData used in this workshop is as shown:
+ void displayReportData( const struct ReportData rdata, const int productOption)
+{	
+	printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf", rdata.skuNum, rdata.productPrice, rdata.weightLBS, rdata.weightKG, rdata.weightG, rdata.calories, rdata.totalServings, rdata.costPerServing, rdata.costCalories);
+}
+The passing of this function could be proved by passing the data as address instead of passing the actual value to the function.
+By doing this, it will increase the efficiency of the program beacuse it reduces the complexity of the code, provides the facility to change the data, requires less space as compared to  passing by value because passing the address pass only the address of the specified varibale which hardly require very less amount of memory as compared to actual pass the value, by doing so , it also saves a lot of time 
+
+
+
+Question 2:The CatFoodInfo structure and the ReportData structure contain common members. How could the "ReportData" structure be improved? Show the new and improved "ReportData" structure with your changes, then show how you would modify your code in the function "displayReportData". Specifically, show how you would need to modify the printf statement that displays the data.
+
+Answer 2: The CatFoodInfo structure  is:                
+	    struct CatFoodInfo
+	    {
+    			int skuNum;
+    			double productPrice;
+    			int calories;
+    			double weight;
+	    };
+
+	The Reportdata structure is:
+	struct ReportData
+	{
+    			int skuNum;
+    			double productPrice;
+    			int calories;
+    			double weightLBS;
+    			double weightKG;
+    			int weightG;
+    			double totalServings;
+    			double costPerServing;
+    			double costCalories;
+	};
+As we can clearly see that the ReportData conatins common members from CatFoodInfo which are skuNum,productPrice,calories,weight. The above structure shown is before the chnages made.
+
+Now, the new and improved struct of CatFoodData and ReportData will be modified as shown below and after doing this we also need to modify displayReportData by making some changes in it which will also be shown below:
+
+		struct CatFoodInfo
+	    {
+    			int skuNum;
+    			double productPrice;
+    			int calories;
+    			double weight;
+	    };
+The CatfoodInfo struct will remain the same as above, the changes will be made to struct ReportData
+
+	struct ReportData
+	{
+    			struct CatFoodInfo information;
+    			double weightKG;
+    			int weightG;
+    			double totalServings;
+    			double costPerServing;
+    			double costCalories;
+	};
+Further changes to modify  in the printf function of displayReportData function is:
+
+ void displayReportData( const struct ReportData rdata, const int productOption)
+{	
+	printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf", rdata.information.skuNum, rdata.information.productPrice, rdata.information.weight, rdata.weightKG, rdata.weightG, rdata.information.calories, rdata.totalServings, rdata.costPerServing, rdata.costCalories);
+}

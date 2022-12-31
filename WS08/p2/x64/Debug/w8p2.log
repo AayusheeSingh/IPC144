@@ -1,0 +1,3 @@
+﻿  w8p2.c
+D:\Seneca College Study\SEMESTER 1\IPC101\WS08\p2\w8p2.c(142,35): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  w8p2.vcxproj -> D:\Seneca College Study\SEMESTER 1\IPC101\WS08\p2\x64\Debug\w8p2.exe
