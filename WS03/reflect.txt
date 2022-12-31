@@ -1,0 +1,43 @@
+****************************************************************************
+                              Reflection
+                             Workshop - #3
+Full Name  :Aayushee Singh
+Student ID#:173927211 
+Email      :asingh1221@myseneca.ca 
+Section    :NHH 
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+****************************************************************************
+1. What did you find to be the most difficult expression you had to code in this workshop? Copy the line of code that you are referring to and explain your answer in detail?
+
+	Answer: The following line from code was the difficult part for me to code: 
+	printf(" 1|       %d         |        %d           |      %d      |   %d   |      %d       \n",((type1=='l'|| type1=='L')&&(coffee_st=='m')),((grindsize1=='F'|| grindsize1 	=='f')&&(maker=='c')),((ds>=5||ds<=9)&&(bag_weight1==500)),((like=='y')&&(cream1=='y')),((maker=='c')&&(temp1>=70.0)));
+
+	I found it difficult beacuse initially I was not able to understand what is exactlty needed to be done in this part. The main difficult thing i found was to create a logic to write in 	this so that i can get the desired result. After spending time to understand this that i need to apply some logical operators with the data given to us according the understanding 	developed by us from the given conditions to us in the table(where conditions are explained). Another problem came in this that to manage the brackets in the conditions.
+
+2. Find one of your coded logical expressions from Part-2 and show how this can be evaluated in two different ways but will produce the same desired result. One version of the statement should apply "deMorgan's Law" and the other will not?
+
+	Answer: The part in this:
+	printf(" 1|       %d         |        %d           |      %d      |   %d   |      %d       \n",((type1=='l'|| type1=='L')&&(coffee_st=='m')),((grindsize1=='F'|| grindsize1 	=='f')&&(maker=='c')),((ds>=5||ds<=9)&&(bag_weight1==500)),((like=='y')&&(cream1=='y')),((maker=='c')&&(temp1>=70.0)));
+
+	where i have applied the logic for only this part ((maker=='c')&&(temp1>=70.0))) can be written in two ways:
+
+	Method1:As i have written in code as:((maker=='c')&&(temp1>=70.0)));
+	Method2:In this de morgan law is followed:
+		a)(maker=='c')&& !(temp1>=60.0 && temp1<=69.9)
+		b)(maker=='c')&& !(temp1>=60.0) || !(temp1>=69.9)
+	Therefore the de morgan law is: !(temp1>=60.0 && temp1<=69.9)= !(temp1>=60.0) || !(temp1>=69.9)
+	Both the methods will produce the same result.
+
+3. In Part-1,you were instructed to create a variable to store the calculated average product prices, while in Part-2, the displaying of the converted Celsius to Fahrenheit temperature unit was NOT to be stored to a variable. Why do you think this was the preferred approach for both cases?
+
+	Answer:In part-1 we stored the average in another variable and proceeded with the work whereas here in part-2 we did not use any variable to store the value of converted value of temperature in fahrenheit. Both the approaches were right but the main difference is that the method used in part-2 was much more convenient as it reduced the complexity of the program and the method in part-1 increased the readability of code. In Part-1 occupied extra variable and memory get used whereas in part-2 the same thing was done inside the printf statement only. 
+
+
+
+
+
+
