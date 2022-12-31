@@ -1,0 +1,49 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #7
+Full Name  : Aayushee Singh
+Student ID#:173927211
+Email      :asingh1221@myseneca.ca
+Section    :NHH
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+
+1.Describe the benefits and advantages of using user-defined types (structures) in this workshop. You must explain your answer using an example from this workshop.
+Answer: There are many benefits of using user defined-types(structurres). Basically these user-defined data types are the collection of data types which is defined by the user according to his/her needs and requirement. Moreover by using structure we can declare different types of data types under one single varibale which is very beneficial. In other words,the main advanatges of this include the flexibility in the code and and enables reusability through out the code. In reusability, we can use these user defined data types anywhere in the program once declared in any of the blocks which will save a lot of time while coding.In flexibility, it makes it convenient for the coder to design the structure according to the scenerio and situation he wants without any hard and fast rules and hence enables to code easily.
+The structures I have used in my code are:
+struct PlayerInfo
+{
+    int lives;
+    char symbol;
+    int n_treasure;
+    int position[maxpathLength];
+};
+
+struct GameInfo
+{
+    int moves;
+    int pathLength;
+    int bomb[maxpathLength];
+    int treasure[maxpathLength];
+};
+Furthermore, I initialised it as : struct PlayerInfo playerinfo = { 0,0,0,{0} };
+                                   struct GameInfo gameinfo = { 0,0,{0},{0} };
+
+
+
+
+
+2. If we enhanced this workshop to keep a history of games played including the endgame results, briefly describe what two major logical changes you would have to make to your program to make this possible?
+Answer: Before setting the logics first we well set the loop to check whether you want to continue the game or not, then the two major logics which will take place are:
+a)For this particular situation, initially I will take an integer of int type to count the number of times the game is played. At the end of every played game and keep it incrementing at the end of each game.
+b)Secondly we will declare the structure in which certain arrays will be introduced which will store the history of (for instance treasure, symbol and other informations) required fields. We can fix it by adding the arrays of structure defined in a loop where the value will be stored according to the number of games played, that we will come to know about from the above mentioned first step.
+
+
+
+3. What part of this workshop did you spend the most time working on? What did you do to overcome your difficulties?
+Answer: The most difficult part of this workshop where i spent most of the time is in setting the ruler that is the symbol according to the next move and storing the history in the history array. Initially I was not able to figure out how to change the position of the symbol according to the next move. To resolve this problem, first i mailed my professor to help me out in this, he checked my code and suggested me to make certain changes and hence i was able to fix that. The problem not only resolved with this, I figured out that I have to save the last position tooo and then move the symbol to next position. For that we need history array and store the last entered position in that and alter the chnages as per the need.
